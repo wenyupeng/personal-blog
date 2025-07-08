@@ -59,7 +59,7 @@ favicon:
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.png
+custom_logo: #/images/custom-logo.svg
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -102,7 +102,7 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   #archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
+  # schedule: /schedule/ || fa fa-calendar
   sitemap: /sitemap.xml || fa fa-sitemap
   commonweal: /404/ || fa fa-heartbeat
 
@@ -207,34 +207,34 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2025
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    name: fa-brands fa-web-awesome
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#ffffff"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: false
-    icp:
+    icp: 京ICP备 1234567890号-1
     # The digit in the num of gongan beian.
-    gongan_id:
+    gongan_id: 1234567890
     # The full num of gongan beian.
-    gongan_num:
+    gongan_num: 京公网安备 1234567890号
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
-    gongan_icon_url:
+    gongan_icon_url: /images/beian.png
 
 
 # ---------------------------------------------------------------
@@ -262,6 +262,9 @@ post_meta:
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
+  time: true
+  total_symbols: true
+  total_time: true
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
@@ -291,14 +294,14 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
+  enable: true
   icon: fa fa-signs-post
 
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
+  enable: true
+  url: https://github.com/wenyupeng/personal-blog/blob/main/source/ # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
@@ -322,8 +325,8 @@ tagcloud:
 # Google Calendar
 # Share your recent schedule to others via calendar page.
 calendar:
-  calendar_id: <required> # Your Google account E-Mail
-  api_key: <required>
+  calendar_id: # Your Google account E-Mail
+  api_key: 
   orderBy: startTime
   showLocation: false
   offsetMax: 72 # Time Range
@@ -349,7 +352,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
@@ -374,9 +377,9 @@ codeblock:
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: default
   # Fold code block
   fold:
     enable: false
@@ -389,15 +392,15 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: left | right
   start_at: left
   # Available values: top | bottom
-  position: top
+  position: bottom
   reversed: false
   color: "#37c6c0"
   height: 3px
@@ -413,8 +416,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/wenyupeng
 
 
 # ---------------------------------------------------------------

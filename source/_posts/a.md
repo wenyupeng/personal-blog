@@ -5,6 +5,13 @@ date: 2017-09-13 14:11:10
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start
+{% cq %}Something{% endcq %}
+{% video https://example.com/sample.mp4 %}
+{% btn #, Text & Icon, home fa-fw %}
+
+{% note info %}
+[Link](#)
+{% endnote %}
 
 ### Create a new post
 

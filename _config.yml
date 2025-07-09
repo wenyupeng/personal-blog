@@ -9,7 +9,9 @@ subtitle: ''
 description: 'Let the past rest, fear not the future — peace within is where you truly belong.'
 keywords:
 author: Chris Wen
-language: en
+language: 
+- en
+- zh-CN
 timezone: ''
 
 # URL
